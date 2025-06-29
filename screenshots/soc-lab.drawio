@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile userAgent="Mozilla/5.0" version="20.1.2" editor="www.diagrams.net">
+  <diagram name="SOC Analyst Home Lab">
+    <mxGraphModel dx="1428" dy="863" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Windows Host -->
+        <mxCell id="2" value="Windows Host" style="swimlane;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="40" width="320" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Splunk Enterprise&#xa;Port 8000 (Web UI)&#xa;Port 514/1514 (Syslog Input)" style="shape=rectangle;whiteSpace=wrap;fillColor=#fff2cc;" vertex="1" parent="2">
+          <mxGeometry x="40" y="40" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <!-- VirtualBox -->
+        <mxCell id="4" value="VirtualBox Hypervisor" style="swimlane;fillColor=#e1d5e7;" vertex="1" parent="1">
+          <mxGeometry x="440" y="40" width="320" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Ubuntu VM&#xa;rsyslog Forwarder" style="shape=rectangle;whiteSpace=wrap;fillColor=#d5e8d4;" vertex="1" parent="4">
+          <mxGeometry x="40" y="40" width="240" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Arrows -->
+        <mxCell id="6" style="edgeStyle=orthogonalEdgeStyle;endArrow=block;strokeColor=#000000;" edge="1" parent="1" source="5" target="3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="140" as="targetPoint"/>
+          </mxGeometry>
+        </mxCell>
+        <!-- Notes -->
+        <mxCell id="7" value="Splunk Data Inputs listening on 514 (UDP) or 1514 (TCP)" style="note;whiteSpace=wrap;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="260" width="300" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="/etc/rsyslog.conf with omfwd enabled" style="note;whiteSpace=wrap;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="440" y="260" width="300" height="60" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
