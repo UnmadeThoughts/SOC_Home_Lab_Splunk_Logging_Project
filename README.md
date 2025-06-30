@@ -36,7 +36,7 @@ The diagram below illustrates the architecture of the SOC Analyst Home Lab envir
 
 ## Installation
 
-The full build and configuration guide is available in [SOC_Analyst_HomeLab_Documentation.md](./SOC_Analyst_HomeLab_Documentation.md).
+The full build and configuration guide is available in [SOC_Analyst_HomeLab_Documentation.md](./docs/SOC_Analyst_HomeLab_Documentation.md).
 
 ## Usage
 
